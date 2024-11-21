@@ -16,9 +16,11 @@ function App() {
     return (
         <div>
             {loading && <div>Loading...</div>}
-            {products.map((product) => (
-              <ProductCard data={product} />
-            ))}
+            <div className="wrapper">
+                {products.map((product) => (
+                <ProductCard data={product} />
+                ))}
+            </div>
         </div>
     );
 }

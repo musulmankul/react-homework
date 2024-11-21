@@ -1,6 +1,6 @@
 .product-card {
   width: 320px;
-  min-height: 476px;
+  min-height: 100%;
   border: 1px solid #eeeeee;
   padding: 16px 0px 0px 0px;
   gap: 32px;
@@ -10,25 +10,38 @@
 
 button {
   background-color: royalblue;
-  color: #eeeeee;
-  border: 1px solid #eeeeee;
-  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
+button:hover {
+  background-color: #004aad;
 }
 
 .category {
   text-transform: capitalize;
+  color: #555555;
+  margin: 8px 0;
+  font-size: 14px;
 }
 
 .priceandbutton {
   display: flex;
-  flex-direction: row;
-  width: 100%;
   justify-content: space-between;
-  
+  align-items: center;
+  margin-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
-  height: 60%;
-  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
