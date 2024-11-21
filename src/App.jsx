@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {ProductCard} from "./components/ProductCard";
+import "./index.css"
 
 function App() {
     const [loading, setLoading] = useState(true);
